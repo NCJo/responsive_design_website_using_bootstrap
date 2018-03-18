@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 body {
   background: #fff;
 }
@@ -22,7 +20,6 @@ img {
   height: auto;
 }
 footer {
-  /* background-color: rgba(2, 179, 228, 0.2); */
   margin-top: 7%;
 }
 /* Manage text for footer */
@@ -71,14 +68,16 @@ footer h3 {
   text-decoration: none;
   color: #2d3c49;
   font-size: 1.5em;
-  margin: 0.50em 0 0 0;
-  font-family: 'Nixie One', serif;
+  margin: 2em 0 0 0;
+  font-family: "Nixie One", serif;
   font-weight: bold;
 }
 #job-title {
-  margin: -1em 0 0 0;
-  font-family: 'Oswald', serif;
+  margin: 1em 0 0 0;
+  font-family: "Oswald", serif;
   color: #2d3c49;
+  /* This fix grid anomaly */
+  clear: both;
 }
 .heroimage {
   border-style: solid;
@@ -87,7 +86,7 @@ footer h3 {
 }
 #introtext {
   font-size: 1.7em;
-  font-family: 'Oswald', serif;
+  font-family: "Oswald", serif;
 }
 #my-words {
   font-family: "Oswald", serif;
@@ -99,13 +98,11 @@ footer h3 {
     padding-left: 0%;
     padding-right: 0%;
   }
-	.col {  margin: 1% 0 1% 0%; }
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
   .heroimage {
     width: 100%;
     float: left;
   }
-  .logo, .proj-img {
+  .proj-img {
     width: 70%;
     margin: 0 15% 0 15%;
   }
@@ -129,7 +126,7 @@ footer h3 {
   #my-name, #job-title, #introtext {
     text-align: center;
     width: 90%;
-    margin: 0 5% 0 5%;
+    margin: 10% 5% 0 5%;
   }
 }
 /* Desktop */
@@ -142,20 +139,13 @@ footer h3 {
     padding-left: 7%;
     padding-right: 7%;
   }
-  .logo {
-    max-width: 25%;
-    float: left;
-    /* margin: 0.3% 0 0 5%; */
-  }
   #my-name a {
     font-size: 3em;
     float: right;
-    /* margin: 2% 2% 0 0; */
   }
   #job-title {
     font-size: 1.4em;
     float: right;
-    /* margin: -4% 2% 0 0; */
   }
   .heroimage {
     width: 100%;
