@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #fff;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+h2 {
+  text-align: center;
+  font-family: "Rozha One", serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+footer {
+  background-color: rgba(2, 179, 228, 0.2);
+}
+/* Manage text for footer */
+footer h3 {
+  font-size: 0.8em;
+  text-align: center;
+  font-family: "Nixie One", serif;
+}
+
+/* For checking borders */
+.temp-red {
+  background-color: red;
+}
+.temp-green {
+  background-color: green;
+}
+.temp-blue {
+  background-color: blue;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+.headcontainer {
+  padding-bottom: 1em;
+  border-bottom: 3px solid #7d97ad;
+}
+#my-name a {
+  text-decoration: none;
+  color: #2d3c49;
+  font-size: 1.5em;
+  margin: 0.50em 0 0 0;
+  font-family: 'Nixie One', serif;
+  font-weight: bold;
+}
+#job-title {
+  margin: -1em 0 0 0;
+  font-family: 'Oswald', serif;
+  color: #2d3c49;
+}
+.heroimage {
+  border-style: solid;
+  margin-top: 1em;
+  border-color: #2d3c49;
+}
+#introtext {
+  font-size: 1.7em;
+  font-family: 'Oswald', serif;
+}
+#my-words {
+  font-family: "Oswald", serif;
+}
+
+/*  Cellphones */
+@media only screen and (max-width: 530px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+  .heroimage {
+    width: 100%;
+    float: left;
+  }
+  .logo, .proj-img {
+    width: 70%;
+    margin: 0 15% 0 15%;
+  }
+  #my-name, #job-title, #introtext {
+    text-align: center;
+    width: 70%;
+    margin: 0 15% 0 15%;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 801px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+  .heroimage {
+    width: 80%;
+    float: left;
+    margin: 2% 10% 0 10%;
+  }
+  .logo, .proj-img {
+    width: 40%;
+    margin: 0 30% 0 30%;
+  }
+  #my-name, #job-title, #introtext {
+    text-align: center;
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+/* Desktop */
+@media only screen and (min-width: 801px) {
+  .logo {
+    max-width: 20%;
+    float: left;
+    margin: 0.3% 0 0 5%;
+  }
+  #my-name a {
+    font-size: 3em;
+    float: right;
+    margin: 2% 2% 0 0;
+  }
+  #job-title {
+    font-size: 1.4em;
+    float: right;
+    margin: -4% 2% 0 0;
+  }
+  .heroimage {
+    width: 100%;
+    float: left;
+  }
+  #introtext {
+    max-width: 20%;
+    margin-left: 5%;
+  }
+  .proj-img {
+    width: 100%;
+  }
+}
