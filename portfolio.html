@@ -3,7 +3,9 @@
 <head>
   <title>Jed's Portfolio</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <!-- Bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Rozha+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -12,10 +14,10 @@
 </head>
 
 <body>
-  <header class="headcontainer">
+  <header class="container border-bottom">
     <div class="group">
       <a href="homepage">
-        <img class="logo" src="images/logo2.png" alt="Logo">
+        <img class="logo img-fluid" src="images/logo2.png" alt="Logo">
       </a>
       <p id="my-name">
         <a href="home">Jed Nimkulrat</a>
@@ -25,45 +27,50 @@
       <p id="job-title">Front-End Programmer</p>
     </div>
   </header>
-  <figure class="section group">
+  <figure class="container-fluid">
     <a href="https://github.com/NCJo">
-      <img class="heroimage" src="images/code_sample.png" alt="Hero_image">
+      <img class="heroimage img-fluid" src="images/code_sample.png" alt="Hero_image">
     </a>
   </figure>
-  <div class="section">
+  <div class="container-fluid">
     <p id="introtext">
       Featured Work
     </p>
   </div>
-  <section class="section group">
-    <div class="col span_1_of_3">
+  <section class="container-fluid row">
+    <div class="col-sm-4">
       <a>
-        <img class="proj-img" src="images/proj1.png" alt="project1">
+        <img class="proj-img img-fluid" src="images/proj1.png" alt="project1">
         <h2>Project 1</h2>
       </a>
     </div>
-    <div class="col span_1_of_3">
+    <div class="col-sm-4">
       <a>
-        <img class="proj-img" src="images/proj2.png" alt="project2">
+        <img class="proj-img img-fluid" src="images/proj2.png" alt="project2">
         <h2>Project 2</h2>
       </a>
     </div>
-    <div class="col span_1_of_3">
+    <div class="col-sm-4">
       <a>
-        <img class="proj-img" src="images/proj3.png" alt="project3">
+        <img class="proj-img img-fluid" src="images/proj3.png" alt="project3">
         <h2>Project 3</h2>
       </a>
     </div>
   </section>
-  <div class="section group">
-    <article class="col span_3_of_3">
+  <div class="container-fluid section group">
+    <article class="container">
       <h2 id="my-words">Hi, I'm Jed Nimkulrat. I'm specialized in Python, and I aspire to be a better programmer.</h2></article>
   </div>
-  <footer class="group">
+  <footer class="container-fluid">
     <section class="section group">
       <h3>Created by Jed</h3></section>
     <section class="section group">
       <h3>Connect with me via email : <a href="mailto:cnimkulr@gmail.com">Click!</a></h3></section>
   </footer>
+
+  <!-- For bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
